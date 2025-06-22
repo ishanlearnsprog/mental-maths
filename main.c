@@ -2,15 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-void clear() {
-    #if defined(__linux__) || defined(__unix__) || defined(__APPLE__)
-        system("clear");
-    #endif
-
-    #if defined(__WIN32)
-        system("cls");
-    #endif
-}
+#include "utils.h"
 
 void start_practise_session() {
     clear();

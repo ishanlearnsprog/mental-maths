@@ -1,4 +1,4 @@
-main: main.c
+main: main.c utils.h
 	@clang main.c -o mm
 
 clean:
